@@ -25,5 +25,3 @@ def check(email):
         return(False)
 
     return(True)
-
-print(check('email@lolik.0h0h0h0.ru'))
