@@ -1,5 +1,6 @@
 def check(email):
     try:
+        email = email.lower()
         assert '@' in email
 
         assert '.' in email
@@ -22,10 +23,7 @@ def check(email):
 
     except AssertionError:
         return(False)
-        exit()
-
-    except TypeError:
-        return(False)
-        exit()
 
     return(True)
+
+print(check('email@lolik.0h0h0h0.ru'))
